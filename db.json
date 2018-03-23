@@ -1,0 +1,73 @@
+customer: {
+    sections: [
+        {
+            title: "Basic Information",
+            order: 1,
+            subsections: [
+                {
+                    title: "Location",
+                    order: 1,
+                    fields: [
+                        {
+                            name: "First Name",
+                            type: "text",
+                            value: "John Doe"
+                            order: 1,
+                            options: null
+                        },
+                        {
+                            name: "Dat of Birth",
+                            type: "date",
+                            value: "13/05/1994"
+                            order: 2,
+                            options: null
+                        },
+                        {
+                            name: "Gender",
+                            type: "options",
+                            value: "Male"
+                            order: 3,
+                            options: [ { option: "Male", value: "M" }, { option: "Female", value: "F" } ]
+                        }
+
+                    ]
+                },
+                {
+                    title: "Contact Details",
+                    order: 2,
+                    fields: [
+                        {
+                            name: "Mobile Phone",
+                            type: "text",
+                            value: "+233209904948"
+                            order: 1,
+                            options: null
+                        },
+                        ...
+
+                    ]
+                },
+            ]
+        },
+        {
+            title: "Images",
+            order: 2,
+            subsections: [
+                {
+                    title: "Passport Photo",
+                    order: 1,
+                    fields: [
+                        {
+                            name: "First Name",
+                            type: "image",
+                            value: "John Doe"
+                            order: 1,
+                            options: null
+                        },
+                        ...
+                    ]
+                }
+            ]
+        }
+    ]
+}
